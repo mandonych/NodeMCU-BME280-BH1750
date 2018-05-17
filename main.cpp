@@ -6,8 +6,8 @@
 #include <BH1750.h> //https://github.com/claws/BH1750
 BH1750 lightMeter;
 
-#include <Adafruit_Sensor.h> //https://github.com/adafruit/Adafruit_Sensor
-#include <Adafruit_BME280.h> //https://github.com/adafruit/Adafruit_BME280_Library
+#include <Adafruit_Sensor.h> // https://github.com/adafruit/Adafruit_Sensor
+#include <Adafruit_BME280.h> // https://github.com/adafruit/Adafruit_BME280_Library
 Adafruit_BME280 bme;
 
 Ticker flipper;
@@ -86,7 +86,7 @@ void Send() {
   client.print("#");
   client.print("you longitude"); // Location of the sensor (longitude)
   client.print("#");
-  client.print("225");
+  client.print("225"); // Altitude(sea level height)
   client.println();
   client.print("#");
   client.print("T1"); // Sensor type. T - temperature, 1 - device number
