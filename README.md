@@ -16,3 +16,16 @@
 ###### Датчик BME280
 Совмещённый датчик температуры, влажности и атмосферного давления.
 <img src="img/gybmp280.jpg" width="450">
+
+Ссылки на библиотеки для работы с датчиками.
+* BH1750 https://github.com/claws/BH1750
+* BME280 https://github.com/adafruit/Adafruit_BME280_Library
+* Adafruit Unified Sensor Driver https://github.com/adafruit/Adafruit_Sensor
+
+###### Опционально
+Плата NodeMCU Base
+
+<img src="img/nodemcu-wemos-lolin-base-board-41.jpg" width="400"><img src="img/NodeMcuBaseV3.jpg" width="400">
+
+для удобства подключения основной платы, а также различной переферии. На плате установлен преобразователь напряжения, позволяющий использовать блоки питания от 6v до 24v.
+
