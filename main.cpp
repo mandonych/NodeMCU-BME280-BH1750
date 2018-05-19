@@ -3,7 +3,7 @@
 #include <ESP8266WiFi.h>
 #include <Ticker.h>
 
-#include <BH1750.h> //https://github.com/claws/BH1750
+#include <BH1750.h> // https://github.com/claws/BH1750
 BH1750 lightMeter;
 
 #include <Adafruit_Sensor.h> // https://github.com/adafruit/Adafruit_Sensor
@@ -38,7 +38,7 @@ void setup() {
   flipper.attach(1, flip);
 }
 
-//---------Sending data to https://narodmon.ru/--------------------------------
+//---------Sending data to https://narodmon.ru/----------
 
 void Send() {
 
@@ -82,11 +82,11 @@ void Send() {
   client.print("#");
   client.print("NodeMCU+BME280+BH1750"); // Device name
   client.print("#");
-  client.print("you latitude"); // Location of the sensor (latitude)
+  client.print("station latitude"); // Location of the sensor (latitude)
   client.print("#");
-  client.print("you longitude"); // Location of the sensor (longitude)
+  client.print("station longitude"); // Location of the sensor (longitude)
   client.print("#");
-  client.print("225"); // Altitude(sea level height)
+  client.print("station altitude"); // Altitude(sea level height)
   client.println();
   client.print("#");
   client.print("T1"); // Sensor type. T - temperature, 1 - device number
